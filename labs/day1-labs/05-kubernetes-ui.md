@@ -10,7 +10,7 @@ There are multiple ways of accessing Kubernetes dashboard. You can access throug
 
 Command-Line Proxy
 
-* Open an RDP session to the jumpbox IP with username and password
+* Install the Azure CLI: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
 * Open a terminal
 * Run ```sudo az aks install-cli``` to install the kubectl kubernetes command line interface
 * Run ```az login``` to authenticate with Azure in order to use Azure CLI in the Jumpbox instead of Cloud Shell
