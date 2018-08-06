@@ -20,7 +20,7 @@ Once you have accessed the jumpbox, you must clone the workshop repo to the mach
 2. Clone the Github repo via the command line
 
     ```
-    git clone https://github.com/swgriffith/blackbelt-aks-hackfest.git
+    git clone https://github.com/swgriffith/AgencyDayContainers.git
     ```
 
 ## Get Applications up and running
