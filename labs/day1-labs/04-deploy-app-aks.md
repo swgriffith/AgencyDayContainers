@@ -81,6 +81,7 @@ kubectl create secret docker-registry acr-secret --docker-server=$ACR_SERVER --d
 
     kubectl exec -it $MONGO_POD bash
 
+    root@heroes-db-deploy-2357291595-xb4xm:/# chmod +x import.sh
     root@heroes-db-deploy-2357291595-xb4xm:/# ./import.sh
     2018-01-16T21:38:44.819+0000	connected to: localhost
     2018-01-16T21:38:44.918+0000	imported 4 documents
