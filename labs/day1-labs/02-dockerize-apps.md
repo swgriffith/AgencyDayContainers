@@ -9,7 +9,7 @@ For the first container, we will be creating a Dockerfile from scratch. For the 
 1. Create a Dockerfile
 
     * Access the jumpbox
-    * In the `~/blackbelt-aks-hackfest/app/web` directory, add a file called "Dockerfile"
+    * In the `~/AgencyDayContainers/app/web` directory, add a file called "Dockerfile"
         * If you in in a SSH session, use vi as the editor
         ```
         nano Dockerfile
@@ -47,7 +47,7 @@ For the first container, we will be creating a Dockerfile from scratch. For the 
     From the terminal session: 
 
     ```
-    cd ~/blackbelt-aks-hackfest/app/web
+    cd ~/AgencyDayContainers/app/web
     
     docker build --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` --build-arg VCS_REF=`git rev-parse --short HEAD` --build-arg IMAGE_TAG_REF=v1 -t rating-web .
     ```
@@ -61,7 +61,7 @@ In this step, the Dockerfile has been created for you.
 1. Create a container image for the node.js API app
 
     ```
-    cd ~/blackbelt-aks-hackfest/app/api
+    cd ~/AgencyDayContainers/app/api
 
     docker build -t rating-api .
     ```
@@ -73,7 +73,7 @@ In this step, the Dockerfile has been created for you.
 1. Create a MongoDB image with data files
 
     ```
-    cd ~/blackbelt-aks-hackfest/app/db
+    cd ~/AgencyDayContainers/app/db
 
     docker build -t rating-db .
     ```
