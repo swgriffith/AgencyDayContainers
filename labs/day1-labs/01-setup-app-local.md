@@ -32,7 +32,7 @@ The underlying data store for the app is [MongoDB](https://www.mongodb.com/ "Mon
 1. Import the data using a terminal session on the jumpbox
 
     ```bash
-    cd ~/blackbelt-aks-hackfest/app/db
+    cd ~/AgencyDayContainers/app/db
 
     mongoimport --host localhost:27019 --db webratings --collection heroes --file ./heroes.json --jsonArray && mongoimport --host localhost:27019 --db webratings --collection ratings --file ./ratings.json --jsonArray && mongoimport --host localhost:27019 --db webratings --collection sites --file ./sites.json --jsonArray
     ```
@@ -44,7 +44,7 @@ The API for the app is written in javascript, running on [Node.js](https://nodej
 1. Update dependencies and run app via node in a terminal session on the jumpbox
 
     ```bash
-    cd ~/blackbelt-aks-hackfest/app/api
+    cd ~/AgencyDayContainers/app/api
 
     npm install && npm run localmachine
     ```
@@ -65,7 +65,7 @@ The web frontend for the app is written in [Vue.js](https://vuejs.org/Vue "Vue.j
 2. Update dependencies and run app via node
 
     ```bash
-    cd ~/blackbelt-aks-hackfest/app/web
+    cd ~/AgencyDayContainers/app/web
 
     npm install && npm run localmachine
     ```
