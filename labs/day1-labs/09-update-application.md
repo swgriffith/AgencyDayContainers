@@ -6,7 +6,7 @@ In this lab, we will make a change to the web application and then re-deploy the
 
 > **Note:** The following is best run from your lab VM. 
 
-1. Use the editor of your choice and browse to `~/blackbelt-aks-hackfest/app/web/src/components/`
+1. Use the editor of your choice and browse to `~/AgencyDayContainers/app/web/src/components/`
 2. Edit code for the `Footer.vue`
 3. Find the snippet below *(line 13)* and change the text _"Azure Global Blackbelt Team"_ to your name or whatever you would like to display.
 
@@ -26,7 +26,7 @@ In this lab, we will make a change to the web application and then re-deploy the
 
 ## Create new container image and push to ACR
 
-1. Browse to `~/blackbelt-aks-hackfest/app/web`
+1. Browse to `~/AgencyDayContainers/app/web`
 2. You should still have a Dockerfile created in an earlier lab
 3. Create a new image with an updated image tag
 
@@ -70,7 +70,7 @@ There are two ways to update the application with the new version. Both are desc
 
 3. Apply the new yaml file
     ```
-    cd ~/blackbelt-aks-hackfest/labs/helper-files
+    cd ~/AgencyDayContainers/labs/helper-files
 
     kubectl apply -f heroes-web-api.yaml
     ```
