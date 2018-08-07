@@ -117,6 +117,8 @@ docker network create --subnet=172.18.0.0/16 my-network
     2018-01-10T19:26:07.787+0000	imported 72 documents
     2018-01-10T19:26:07.746+0000	connected to: localhost
     2018-01-10T19:26:07.761+0000	imported 2 documents
+    
+    #NOTE: If you get a permission error on import run chmod +x import.sh to make the script executable
     ```
 
 4. Type `exit` to exit out of container
